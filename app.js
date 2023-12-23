@@ -151,7 +151,7 @@ const dbUser = process.env.DB_USER;
 const dbPass = process.env.DB_PASS;
 
 mongoose
-    .connect(`mongodb+srv://${dbUser}:${dbPass}@cluster0.eevfjmt.mongodb.net/?retryWrites=true&w=majority`)
+    .connect(`mongodb+srv://${dbUser}:${dbPass}@schedule.l9frbbn.mongodb.net/?retryWrites=true&w=majority`)
     .then(() => {
         app.listen(4004);
         console.log('Conectou ao banco');
